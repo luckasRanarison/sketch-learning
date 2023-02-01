@@ -1,11 +1,8 @@
 {
-  "name": "p5js-sketch",
+  "name": "sketch-learning",
   "version": "1.0.0",
   "description": "A collection of random p5js sketches",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "start": "cd sketch && p5 server"
   },
