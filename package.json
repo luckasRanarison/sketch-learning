@@ -1,0 +1,25 @@
+{
+  "name": "p5js-sketch",
+  "version": "1.0.0",
+  "description": "A collection of random p5js sketches",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "cd sketch && p5 server"
+  },
+  "keywords": [
+    "p5js",
+    "processing",
+    "sketch"
+  ],
+  "author": "Luckas",
+  "license": "MIT",
+  "dependencies": {
+    "p5-manager": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.5.0"
+  }
+}

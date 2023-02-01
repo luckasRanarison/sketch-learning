@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "target": "es6"
+    },
+    "include": ["./node_modules/@types/**/*.d.ts", "sketch"]
+}
