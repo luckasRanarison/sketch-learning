@@ -1,6 +1,7 @@
 {
   "name": "sketch",
   "projects": [
-    "circle-table"
+    "circle-table",
+    "mandelbrot-set"
   ]
 }
