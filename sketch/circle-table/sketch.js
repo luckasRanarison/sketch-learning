@@ -26,6 +26,7 @@ function setup() {
         .attribute("size", 3)
         .attribute("min", 0)
         .attribute("value", 1)
+        .attribute("step", 0.1)
         .input(clear);
 
     multiplier = createInput()
@@ -58,18 +59,17 @@ function draw() {
     circle(x, y, r * 2);
 
     const max = points.value();
-    const angle = 360 / max;
-    const toDegree = (angle) => (angle * Math.PI) / 180;
+    const angle = (2 * Math.PI) / max;
 
     for (let i = 0; i < max; i++) {
-        const cx = x + r * Math.cos(toDegree(i * angle - 180));
-        const cy = y + r * Math.sin(toDegree(i * angle - 180));
+        const cx = x + r * Math.cos(i * angle - Math.PI);
+        const cy = y + r * Math.sin(i * angle - Math.PI);
 
         noStroke();
         fill(0);
         circle(cx, cy, size.value());
 
-        const resultAngle = toDegree(i * multiplier.value() * angle - 180);
+        const resultAngle = i * multiplier.value() * angle - Math.PI;
         const px = x + r * Math.cos(resultAngle);
         const py = y + r * Math.sin(resultAngle);
 
